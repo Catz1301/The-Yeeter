@@ -18,7 +18,7 @@ int main() {
 		
 		Texture playerTex, bgTex;
 		playerTex.loadFromFile("../assets/player.png");
-		bgTex.loadFromFile("../assets/bg.png");
+		bgTex.loadFromFile("../assets/bg.jpeg");
 		Sprite player, bg;
 		player.texture(playerTex);
 		bg.texture(bgTex);
