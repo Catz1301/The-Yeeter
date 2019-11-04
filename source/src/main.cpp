@@ -5,7 +5,7 @@
 using namespace sf;
 
 int main() {
-	RenderWindow window(VideoMode(600, 800), "The yeeter");
+	RenderWindow window(VideoMode(800, 600), "The yeeter");
 	
 	while (window.isOpen()) {
 		// Event processing
@@ -16,6 +16,14 @@ int main() {
 				window.close();
 		}
 		
+		Texture playerTex, bgTex;
+		playerTex.loadFromFile("../assets/player.png");
+		bgTex.loadFromFile("../assets/bg.png");
+		Sprite player, bg;
+		player.texture(playerTex);
+		bg.texture(bgTex);
 		window.clear(Color(255,255,255));
+		window.draw(bg);
+		window.draw(player);
 	}
 }
