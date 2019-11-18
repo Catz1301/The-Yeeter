@@ -32,10 +32,12 @@ int main() {
 	Music fail;
 	fail.openFromFile("assets/failed.ogg");
 
-	stick50.loadFromFile("Stickman.png");
-	stickJump.loadFromFile("stickmanJump.png");
-	objYeetTex.loadFromFile("yeetObjTex_ctc.png");
-	obstacleTex.loadFromFile("obstacleTex.png");
+	meow.setVolume(50);
+	fail.setVolume(50);
+	stick50.loadFromFile("assets/Stickman.png");
+	stickJump.loadFromFile("assets/stickmanJump.png");
+	objYeetTex.loadFromFile("assets/yeetObjTex_ctc.png");
+	obstacleTex.loadFromFile("assets/obstacleTex.png");
 	
 	objYeet.setTexture(objYeetTex);
 	objYeet1.setTexture(objYeetTex);
@@ -181,7 +183,7 @@ int main() {
 					window.display(); // Now we update the window and (maybe) show the yellow-colored window. NOTE: If you blink, you WILL miss it, it's that fast. Seriously.
 					failed = false;
 				}
-				else if (Keyboard::isKeyPressed(Keyboard::D)) {
+				else if (Keyboard::isKeyPressed(Keyboard::T)) {
 					if (debug == false)
 						debug = true;
 					else
@@ -256,8 +258,8 @@ int main() {
 
 
 		if (objYeetMoving == true) {
-			objYeet.move(Vector2f(speed / 2, -10));
-			objYeet.rotate(1);
+			objYeet.move(Vector2f(speed / 2, -2));
+			objYeet.rotate(2);
 		}
 
 		if (objYeetMoving1 == true) {
