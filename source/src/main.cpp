@@ -156,7 +156,7 @@ int main() {
 				else if (Keyboard::isKeyPressed(Keyboard::Right) || Keyboard::isKeyPressed(Keyboard::D)) {
 					movingRight = true;
 				}
-				else if (Keyboard::isKeyPressed(Keyboard::Pause))
+				else if (Keyboard::isKeyPressed(Keyboard::Pause) || Keyboard::isKeyPressed(Keyboard::Delete))
 				{
 					// Reset jump-related flags:
 					jump = goingUp = goingDown = false; // Set all flags for jumping to false
