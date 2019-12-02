@@ -18,3 +18,5 @@ NOTE: Release only available for Windows at the moment, <del>Linux version will 
 Released on 11/18/2019, Time has been forgotten (oops).<br />
 
 
+### 1.1.1 - Third Release, Development Stage
+Released on 11/29, at about 7 P.M. Eastern Standard Time.<br />
